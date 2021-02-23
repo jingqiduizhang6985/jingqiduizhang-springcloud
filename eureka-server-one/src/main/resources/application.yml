@@ -1,0 +1,9 @@
+server:
+  port: 9001 #服务的端口
+eureka:
+  instance:
+    hostname: eureka-server-one #应用示例的主机名
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9001/eureka
+    register-with-eureka: false
