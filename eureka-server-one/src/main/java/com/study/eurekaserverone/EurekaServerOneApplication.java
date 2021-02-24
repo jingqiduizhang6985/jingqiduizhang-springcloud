@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * https://www.cnblogs.com/shiguotao-com/p/10417740.html
  *
  * 服务启动后 访问ip地址
- * http://127.0.0.1:9001/
+ * http://127.0.0.1:7001/
  */
 @EnableEurekaServer
 @SpringBootApplication

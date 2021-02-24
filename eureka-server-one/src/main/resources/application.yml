@@ -1,9 +1,14 @@
 server:
-  port: 9001 #����Ķ˿�
+  port: 7001 #服务的端口
+spring:
+  application:
+    name: eureka-server-one #应用示例的主机名
 eureka:
-  instance:
-    hostname: eureka-server-one #Ӧ��ʾ����������
   client:
-    service-url:
-      defaultZone: http://127.0.0.1:9001/eureka
-    register-with-eureka: false
+    registerWithEureka: false #服务注册，是否将自己注册到Eureka服务中
+    fetchRegistry: false #服务发现，是否从Eureka中获取注册信息
+    serviceUrl: #Eureka客户端与Eureka服务端的交互地址，高可用状态配置对方的地址，单机状态配置自己（如果 不配置则默认本机8761端口）
+      defaultZone: http://localhost:7001/eureka/
+    server:
+      enable‐self‐preservation: false #是否开启自我保护模式
+      eviction‐interval‐timer‐in‐ms: 60000 #服务注册表清理间隔（单位毫秒，默认是60*1000）
