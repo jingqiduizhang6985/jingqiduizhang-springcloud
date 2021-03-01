@@ -15,7 +15,7 @@ eureka-ribbon-service-one  需要调用的服务
 eureka-ribbon-service-two  需要调用的服务
 eureka-ribbon-client-one ribbon负载均衡
 
-### ribbon 客户端负载均衡器
+### feign 客户端负载均衡器
 eureka-center-one          注册中心
 eureka-ribbon-service-one  需要调用的服务
 eureka-ribbon-service-two  需要调用的服务
